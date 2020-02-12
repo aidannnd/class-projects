@@ -1,2 +1,2 @@
 # class_projects
-My C++ class projects
+My programming class projects
