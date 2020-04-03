@@ -1,7 +1,6 @@
 import unittest
 from HybridSort import *
 
-
 class TestProject3(unittest.TestCase):
     def test_get_pivot(self):
         ex = [13,51,49,35,7,48,55,23,15,3,28,37,32,17]
@@ -41,7 +40,6 @@ class TestProject3(unittest.TestCase):
         diff = largest_sequential_difference(ex)
         print(diff)
         assert diff == 22
-
 
 if __name__ == "__main__":
     unittest.main()

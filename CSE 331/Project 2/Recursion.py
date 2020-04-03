@@ -1,9 +1,7 @@
 """
 PROJECT 2 - Linked List Recursion
 Name: Aidan Delfuoco
-PID: 55843748
 """
-
 
 class LinkedNode:
     # DO NOT MODIFY THIS CLASS #
@@ -41,9 +39,7 @@ class LinkedNode:
     def set_next(self, next):
         self._next = next
 
-
 # IMPLEMENT THESE FUNCTIONS - DO NOT MODIFY FUNCTION SIGNATURES #
-
 
 def insert(value, node=None):
     """
@@ -86,7 +82,6 @@ def remove(value, node):
     :param node: the starting head node
     :return: starting node of the linked list
     """
-
     starting_node = node
     if node is None: # list is empty
         pass
@@ -101,7 +96,6 @@ def remove(value, node):
 
     return starting_node
 
-
 def remove_all(value, node):
     """
     Remove all nodes in the list with the given value starting at head node
@@ -109,7 +103,6 @@ def remove_all(value, node):
     :param node: the starting head node
     :return: starting node of the linked list
     """
-
     starting_node = node
     if node is None: # list is empty
         pass
@@ -125,7 +118,6 @@ def remove_all(value, node):
 
     return starting_node
 
-
 def search(value, node):
     """
     Looks for value in list starting with head node
@@ -133,7 +125,6 @@ def search(value, node):
     :param node: the starting head node
     :return: True if the value is in the list and False if it is not in the list
     """
-
     found_node = False
     if node is None: # list is empty
         pass
@@ -176,7 +167,6 @@ def sum_list(node):
 
     return list_sum
 
-
 def count(value, node):
     """
     counts and returns how many times the given value occurs in the list starting at head node
@@ -184,7 +174,6 @@ def count(value, node):
     :param node: the starting head node
     :return: how many times the given value occurs in the list
     """
-
     list_count = 0
     if node is None: # list is empty or end of list
         pass
@@ -202,7 +191,6 @@ def reverse(node):
     :param node: the starting head node
     :return: the head node of the reversed list
     """
-
     if node._next is None: # end of list
         return node
 
@@ -213,15 +201,3 @@ def reverse(node):
     (node._next)._next = node
     node._next = None
     return new_node
-
-# def list_percentage(node, percentage, counter=0):
-#     """
-#     Return the first node of the required subset of data based on user defined percentage
-#     :param node: the starting head node
-#     :param percentage: the percentage of the entire list to be returned (float)
-#     :param counter: additional parameter to be used as needed
-#     :return: the first node in the subset of the list subset
-#     """
-#     # returns None if no nodes are to be returned
-
-

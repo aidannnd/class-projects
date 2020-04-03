@@ -1,7 +1,6 @@
 import unittest
 from Recursion import insert, remove, remove_all, to_string, search, sum_list, \
-    count, reverse, length, list_percentage
-
+    count, reverse, length
 
 class TestProject2(unittest.TestCase):
     def test_insert(self):
@@ -62,7 +61,6 @@ class TestProject2(unittest.TestCase):
             assert list1.get_value() == i
             list1 = list1.get_next()
 
-
     def test_remove_all(self):
         list1 = insert(0)
         insert(1, list1)
@@ -87,23 +85,10 @@ class TestProject2(unittest.TestCase):
 
         list1 = reverse(list1)
 
-        print(to_string(list1))
+        # print(to_string(list1))
         # for i in [3, 2, 1, 0]:
         #     assert list1.get_value() == i
         #     list1 = list1.get_next()
-
-
-    # def test_list_percentage(self):
-    #     list1 = insert(1)
-    #     insert(2, list1)
-    #     insert(3, list1)
-    #     insert(4, list1)
-    #     correct_sublist = insert(3)
-    #     insert(4, correct_sublist)
-    #     sublist = list_percentage(list1, .50)
-    #     assert correct_sublist.get_value() == sublist.get_value()
-    #     assert correct_sublist.get_next().get_value() == sublist.get_next().get_value()
-
 
 if __name__ == "__main__":
     unittest.main()

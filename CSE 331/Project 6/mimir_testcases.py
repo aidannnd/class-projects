@@ -1,7 +1,6 @@
 import unittest
 from PriorityHeap import PriorityHeap, Node, heap_sort, current_medians
 
-
 class MimirTests(unittest.TestCase):
     
     def test_push(self):
@@ -32,8 +31,6 @@ class MimirTests(unittest.TestCase):
         assert max_heap._data[1] > max_heap._data[4]
         max_heap.push(6, 'y')
         assert max_heap._data[2] > max_heap._data[5]
-
-
 
     def test_pop(self):
         # test 1: tests pop returns the root
@@ -120,7 +117,6 @@ class MimirTests(unittest.TestCase):
         data_list2 = [2, 8, 35, 9]
         median_data2 = current_medians(data_list2)
         assert median_data2 == [2, 5, 8, 8.5]
-
 
 if __name__ == '__main__':
     unittest.main()

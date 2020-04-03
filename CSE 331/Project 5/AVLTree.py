@@ -2,6 +2,7 @@
 PROJECT 5 - AVL Trees
 Name: Aidan Delfuoco
 """
+
 import queue
 
 class TreeNode:
@@ -154,37 +155,6 @@ class AVLTree:
         :param value: the value to be inserted into the node in the form of a tree
         :return: None
         """
-        # if node == None:
-        #     if self.root == None:
-        #         self.root = TreeNode(value)
-        #         self.root.parent = None
-        #         self.size += 1
-        #         return
-        #     else:
-        #         self.size += 1
-        #         return TreeNode(value)
-
-        # if node.value > value:
-        #     node.left = self.insert(node.left, value)
-        #     node.left.parent = node
-        # elif node.value < value:
-        #     node.right = self.insert(node.right, value)
-        #     node.right.parent = node
-        # else:
-        #     pass
-
-        # self.update_height(node)
-
-        # balance = self.get_balance(node)
-        # if balance == -2 or balance == 2:
-        #     #print(self)
-        #     node = self.rebalance(node)
-        #     return node.parent
-        # #print(self)
-        # # if node == self.root:
-        # #     self.insert(self.root, self.root.value)
-        # return node
-
         if self.root is None:
             new_node = TreeNode(value, None)
             self.root = new_node
@@ -273,45 +243,12 @@ class AVLTree:
             left = -1
         node.height = max(left, right) + 1
 
-        # if node != None:
-        #     left_height = -1
-        #     if node.left != None:
-        #         left_height = node.left.height # update left node's height
-
-        #     right_height = -1
-        #     if node.right != None:
-        #         right_height = node.right.height # update right node's height
-
-        #     node.height = max(left_height, right_height) + 1 # update parent node's height
-
-        # if node == None:
-        #     return
-
-        # if node.right != None:
-        #     right_height = node.right.height
-        # else:
-        #     right_height = 0
-
-        # if node.left != None:
-        #     left_height = node.left.height
-        # else:
-        #     left_height = 0
-
-        # node.height = max(left_height, right_height) + 1
-
     def depth(self, value):
         """
         Returns the depth of the node with the given value. If the node is not found returns -1.
         :param value: the value of a node we are searching for
         :return: the depth of the node, if not found returns -1
         """
-        # node = self.search(self.root, value)
-        # depth = self.root.height - node.height
-        # if node.parent.height > node.height+1:
-        #     depth += 1
-
-        # return depth
-
         depth = 0
         node = self.root
         while node:
@@ -461,20 +398,6 @@ class AVLTree:
         :param node: the node to calculate the balance factor for
         :return: the balance factor for the given node
         """
-        # if node != None:
-        #     left_height = -1
-        #     if node.left != None:
-        #         left_height = AVLTree.height(node.left)
-
-        #     right_height = -1
-        #     if node.right != None:
-        #         right_height = AVLTree.height(node.right)
-
-        #     return left_height - right_height
-
-        # else:
-        #     return 0
-
         if node is None:
             return 0
         AVLTree.update_height(node)
@@ -523,23 +446,6 @@ class AVLTree:
         :param node: the root of the (sub)tree
         :return: the root of the new subtree
         """
-        # right_left_child = node.right.left
-        # if node.parent is not None: # node is not the root
-        #     AVLTree.replace_child(node.parent, node, node.right)
-        # else: # node is the root
-        #     self.root = node.right
-        #     self.root.parent = None
-
-        # AVLTree.set_child(node.right, node, True)
-        # #AVLTree.set_child(node.right, node.right.right, False)
-        # AVLTree.set_child(node, right_left_child, False)
-
-        # self.update_height(node)
-        # self.update_height(node.parent.left)
-        # self.update_height(node.parent)
-
-        # return node.parent
-
         root_next = node.right
         left_next = node
         right_next = node.right.right
@@ -565,23 +471,6 @@ class AVLTree:
         :param node: the root of the (sub)tree
         :return: the root of the new subtree
         """
-        # left_right_child = node.left.right
-        # if node.parent is not None: # node is not the root
-        #     AVLTree.replace_child(node.parent, node, node.left)
-        # else: # node is the root
-        #     self.root = node.left
-        #     self.root.parent = None
-
-        # AVLTree.set_child(node.left, node, False)
-        # #AVLTree.set_child(node.right, node.left.left, True)
-        # AVLTree.set_child(node, left_right_child, True)
-
-        # self.update_height(node)
-        # self.update_height(node.parent.left)
-        # self.update_height(node.parent)
-
-        # return node.parent
-
         root_next = node.left
         right_next = node
         left_next = node.left.left

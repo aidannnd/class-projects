@@ -1,5 +1,6 @@
 """
-Implemented by: Yash Vesikar and Brandon Field
+PROJECT 7 - Hash Tables
+Name: Aidan Delfuoco
 """
 
 class HashNode:

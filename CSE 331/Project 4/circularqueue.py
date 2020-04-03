@@ -2,8 +2,8 @@
 Project 4 - Circular Queues
 Name: Aidan Delfuoco
 """
-from collections import defaultdict
 
+from collections import defaultdict
 
 class CircularQueue:
     """
@@ -94,7 +94,6 @@ class CircularQueue:
         Doubles the capacity of the queue immediately when capacity is reached to make room for new elements
         Moves the head to the front of the newly allocated list
         """
-
         if self.size == self.capacity:
             new_data = []
 
@@ -125,7 +124,6 @@ class CircularQueue:
         Halves the capacity of the queue immediately if the size is 1/4 or less of the capacity
         Moves the head to the front of the newly allocated list
         """
-
         if (self.size <= (self.capacity)//4) and self.capacity > 7:
             new_data = []
 
@@ -177,7 +175,6 @@ class CircularQueue:
             return popped
         else:
             return None
-
 
 class QStack:
     """
@@ -246,7 +243,6 @@ class QStack:
         else:
             return self.cq.head_element()
 
-
 def digit_swap(nums, replacements):
     """
     Given a string of characters "nums" and an integer "replacements", return the length of the
@@ -256,7 +252,6 @@ def digit_swap(nums, replacements):
     :param: replacements: the number of swaps that you are permitted to make
     :return: the length of the longest substring of nums that contains the same character
     """
-    
     queue = CircularQueue()
     queue_dict = defaultdict(int)
 

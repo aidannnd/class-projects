@@ -1,6 +1,6 @@
 """
+PROJECT 3 - Hybrid Sorting
 Name: Aidan Delfuoco
-PID: A55843748
 """
 
 def quick_sort(unsorted, threshold, start, end, reverse=False):
@@ -27,8 +27,6 @@ def quick_sort(unsorted, threshold, start, end, reverse=False):
         quick_sort(unsorted, threshold, start, pivot_loc, reverse)
         quick_sort(unsorted, threshold, pivot_loc+1, end, reverse)
 
-
-
 def subdivide(unsorted, start, end, reverse):
     """
         This function will subdivide the given list within the range of given indices.
@@ -39,7 +37,6 @@ def subdivide(unsorted, start, end, reverse):
         sort in decreasing order
         :return: [int] the index of where the pivot ends up in the list
     """
-
     pivot = find_pivot(unsorted, start, end)
 
     if not reverse: # case for reverse=False
@@ -87,7 +84,6 @@ def subdivide(unsorted, start, end, reverse):
 
     return end
 
-
 def find_pivot(unsorted, start, end):
     """
         This function will use a median of three in order to find the pivot value for the given
@@ -97,7 +93,6 @@ def find_pivot(unsorted, start, end):
         :param end: end index of the range of values in the list the function is working on
         :return: [int] the value of the pivot
     """
-
     midpoint = (int)((start + end) / 2) # get midpoint index, round down
     pivot_list = [unsorted[start], unsorted[end], unsorted[midpoint]] # unsorted, elements of list
     elem1 = min(pivot_list)
@@ -136,7 +131,6 @@ def insertion_sort(unsorted, start, end, reverse):
                 unsorted[index] = temp_num
                 index += 1
     
-
 def largest_sequential_difference(lst):
     """
         This function will find the largest difference between sequential values in a sorted list

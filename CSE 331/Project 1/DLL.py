@@ -1,3 +1,8 @@
+"""
+PROJECT 1 - Doubly Linked Lists
+Name: Aidan Delfuoco
+"""
+
 class DLLError(Exception):
     """
     Class representing an error related to the DLL class implemented below.
@@ -126,7 +131,6 @@ class DLL:
             (self.head).next.prev = None # set head prev to None
             self.head = (self.head).next # set head to node after head
         self.size -= 1
-
 
     def delete_back(self):
         """
@@ -268,14 +272,12 @@ class DLL:
         except DLLError:
             return 0
 
-
     def sum(self):
         """
         Finds the sum of all nodes in the list
         :param start: the indicator of the contents of the list
         :return: the sum of all items in the list
         """
-
         # lists for each required type
         sum = 0
         sum_str = ""
@@ -307,7 +309,6 @@ def reverse(LL):
     Reverses a linked list in place
     :param LL: The linked list to reverse
     """ 
-    
     current_node = LL.head
     temp_node = DLLNode(None)
     

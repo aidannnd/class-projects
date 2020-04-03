@@ -3,7 +3,6 @@ PROJECT 6 - Priority Queues and Heaps
 Name: Aidan Delfuoco
 """
 
-
 class Node:
     """
     This class represents a node object with k (key) and v (value)
@@ -51,7 +50,6 @@ class Node:
         return '({0},{1})'.format(self.key, self.value)
 
     __repr__ = __str__
-
 
 class PriorityHeap:
     """
@@ -271,4 +269,3 @@ def current_medians(values):
                 medians.append(min_heap.top())
 
         return medians
-            
