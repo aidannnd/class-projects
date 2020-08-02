@@ -1,5 +1,5 @@
 # class_projects
-My programming class projects
+A collection of programming projects I completed for my undergrad computer science classes
 
-CSE 232: Intro to Programming II (C++)  
-CSE 331: Algorithms and Data Structures (Python)
+CSE 331: Algorithms and Data Structures (Python) 2020
+CSE 232: Intro to Programming II (C++) 2019
