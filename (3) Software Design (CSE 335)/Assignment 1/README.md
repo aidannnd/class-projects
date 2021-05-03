@@ -1,3 +1,3 @@
 # Assignment 1 - Introducing Object-Oriented Programming
 This assignment represents a command line farm management system implemented using object-oriented programming.
-<br> <img src="https://i.imgur.com/nKkJjf5.png"> <br>
+<br><br> <img src="https://i.imgur.com/nKkJjf5.png"> <br>
