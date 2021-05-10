@@ -4,4 +4,5 @@ Arranged in chronological order.
 
 CSE 232: Intro to Programming II (C++) 2019 <br>
 CSE 331: Algorithms and Data Structures (Python) 2020 <br>
-CSE 335: Software Design (C++) 2020
+CSE 335: Software Design (C++) 2020 <br>
+CSE 477: Web Application Development (HTML/CSS, PHP, SQL) 2021

@@ -1,0 +1,191 @@
+html, body, header, footer, hgroup, nav, article, section, figure,
+figcaption, h1, h2, h3, ul, li, body, div, p, img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  background-image: url('../images/sorry_background.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+header nav p {
+  font-size: 0.8em;
+  text-align: right;
+  padding-right: 2em;
+  padding-top: 0.75em;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.25em;
+  padding-bottom: 0.25em;
+}
+
+nav a:link {
+  color: white;
+}
+
+header h1 a:link {
+  color: white;
+  text-decoration: none;
+}
+
+header h1 a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:visited{
+  color: #88888888;
+}
+
+.cur p{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  text-align: center;
+}
+
+.win {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .75em;
+  text-align: center;
+}
+
+.win h1 {
+  font-size: 2em;
+}
+
+.win p {
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+
+.content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  font-size: 1em;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+.form {
+  text-align: left;
+  margin: 0 1.25em 0 1.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  vertical-align: center;
+}
+
+.content p {
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  text-align: left;
+}
+
+form {
+  display: block;
+  text-align: center;
+}
+
+form ul{
+  margin-left: 2em;
+}
+
+div.game {
+  display: inline-block;
+  position: relative;
+  margin: 1em auto;
+  width: 96vw;
+  height: 96vw;
+  max-width: 1024px;
+  max-height: 1024px;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+  background-image: url("../images/sorryboard.png");
+  background-size: 100% 100%;
+}
+
+div.game > div.board {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.game div.row {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 0;
+  width: 100%;
+  height: 6.25%;
+  min-height: 6.25%;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+div.game div.cell {
+  flex: 1 0 6.25%;
+  vertical-align: top;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: contain;
+  border: black;
+  /*border: 1px solid orange;*/
+}
+
+div.game div.cell2 {
+  flex: 1 0 6.25%;
+  vertical-align: top;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: contain;
+}
+
+div.cell button {
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  //opacity: .2;
+}
+
+div.cell form {
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .2;
+}
