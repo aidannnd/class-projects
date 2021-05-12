@@ -1,2 +1,2 @@
 # CSE 477 - Web Application Development 2021
-This folder contains some of my work for my Web Application Development course. Navigate within each subfolder for a description of the individual assignments.
+This folder contains some of my work for my Web Application Development course. Navigate within each subfolder for a description of the individual assignments and a link to the live website.
