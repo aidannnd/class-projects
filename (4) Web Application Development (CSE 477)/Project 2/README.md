@@ -4,7 +4,7 @@ This is achieved through the creation of a SQLite database to read and write use
 
 The project is a web site displayed with HTML/CSS and powered by PHP. <br>
 I developed this site alongside a group of 5 using Agile software development for part of our midterm grade.<br><br>
-Check out the project [here](http://webdev.cse.msu.edu/~delfuoc1/project2/)
+Check out the live project [here](http://webdev.cse.msu.edu/~delfuoc1/project2/)
 <br><br> <img src="https://i.imgur.com/CoTiJDf.png">
 <br><br> <img src="https://i.imgur.com/szUqh9h.png">
 <br><br> <img src="https://i.imgur.com/nyIbkSd.png">

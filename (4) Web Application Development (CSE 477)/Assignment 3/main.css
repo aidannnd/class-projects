@@ -1,0 +1,108 @@
+html, body, header, footer, hgroup, nav, article, section, figure,
+figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+body {
+    margin: 0 auto 0em auto;
+    background-image: url("images/cave-background.jpg");
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 650px;
+    color: white;
+    background-color: #3f3622;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header p {
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+article h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: normal;
+}
+
+article div.gamephp {
+    margin-top: 1em;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: normal;
+}
+
+article {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+figure img {
+    border: thin solid;
+    padding: 0.5em;
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+article div.gamesec {
+    margin-top: 1em;
+}
+
+div.rooms {
+    padding: 1em;
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+div.room {
+    width: 200px;
+    display: inline-block;
+}
+
+div.room p {
+    text-align: center;
+}
+
+div.endheader {
+    padding-bottom: 1em;
+}
+
+div.welcomeh2 h2 {
+    padding: 0.5em;
+}
+
+div.instructionsp p {
+    padding: 1em;
+}
